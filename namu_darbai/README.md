@@ -35,3 +35,7 @@
 ## HTML6
 
 * Puikiai.
+
+## HTML7
+
+* Puikiai.
