@@ -1,0 +1,34 @@
+*{ /* visi elementai */
+  font-size: 20pt;
+}
+
+h1{
+  color: white;
+  background-color: green;
+  width: 500px;
+}
+
+p{
+  color:grey;
+  font-style: italic;
+}
+
+raudonas{ /* klases selektorius */
+  color:red;
+}
+
+div.raudonas{ /* klases ir elemento selektorius */
+  background-color: red;
+  color: white;
+}
+
+#pirmas{ /* id selektorius */
+  letter-spacing: 5px;
+}
+
+[title]{ /* atributo (kuris yra viduj elemento) selektorius */
+  border-radius: 50px;
+  border-color: orange;
+  border-width: 5px;
+  border-style: dashed;
+}

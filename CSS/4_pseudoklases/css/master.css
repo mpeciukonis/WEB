@@ -1,0 +1,45 @@
+@font-face {
+  font-family: mano_fontas;
+  src: url("../fonts/test_font.ttf");
+}
+
+div{
+  border: 1px dashed black;
+  width: 100px;
+  height: 100px;
+}
+
+div:nth-child(2n+1){
+  background-color: yellow;
+}
+
+div:first-child{
+  background-color: red;
+}
+
+div:hover{ /* pseudoklase, hoveri geriausia det i gala */
+  background-color: purple;
+}
+
+div:active{
+  border: 5px dashed cyan;
+  background-color: green;
+}
+
+a{
+  font-size: 20pt;
+  font-family: mano_fontas, sans-serif;
+  text-decoration: none; /* Nuimti pabraukima nuo linku */
+  text-transform: uppercase;
+  color: black;
+  text-shadow: 7px 5px 7px green;
+}
+
+a:hover{
+  background-color: #d5ff57;
+  color: white;
+}
+
+ul{
+  list-style-type: none;
+}
