@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Knygu parduotuviu portalas</title>
+  </head>
+  <body>
+    <h1>Knygų parduotuvių portalas</h1>
+
+    <ul>
+      <li><a href="index.html">Pagrindinis</a></li>
+      <li><a href="http://www.patogupirkti.lt/" target="_blank">Patogu pirkti</a></li>
+      <li><a href="https://www.knygos.lt/" target="_blank">Knygos.lt</a></li>
+      <li><a href="https://www.knyguklubas.lt/" target="_blank">Knygų klubas</a></li>
+      <li><a href="https://www.pegasas.lt/" target="_blank">Pegasas</a></li>
+      <li><a href="http://www.almalittera.lt/" target="_blank">Alma Littera</a></li>
+    </ul>
+
+    <address>
+      Rašykite <a href="mailto:knygos@example.com">knygos@example.com</a><br>
+      Aplankykite mus:<br>
+      knyguportalas.lt<br>
+      Ulonų g. 5, Vilnius<br>
+      Lietuva
+    </address>
+
+    <div id="map" style="width:600px;height:400px;background:yellow"></div>
+    <script>
+    function myMap() {
+      var myCenter = new google.maps.LatLng(54.709716, 25.292264);
+      var mapCanvas = document.getElementById("map");
+      var mapOptions = {center: myCenter, zoom: 17};
+      var map = new google.maps.Map(mapCanvas, mapOptions);
+      var marker = new google.maps.Marker({position:myCenter});
+      marker.setMap(map);
+    }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvQ98Iu8OXqocauL9E_J1kUE6D9iHkTUM&callback=myMap"></script>
+  </body>
+</html>
