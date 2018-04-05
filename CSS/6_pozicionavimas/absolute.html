@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      div{
+        box-shadow: 0px 0px 3px grey;
+        background-color:red;
+        width: 150px;
+        height: 75px;
+        margin: 1px;
+      }
+
+      .tevas{
+        position: relative;
+        right: 0;
+      }
+
+      .plyta1{
+        position: absolute; /*vienas uz kito, body (tevinio elemento) atzvilgiu (top-bottom)*/
+        left: 30px;
+        top: 30px;
+      }
+
+      .plyta2{
+        position: absolute;
+        z-index: 1px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tevas">
+      <div class="plyta1">
+        1
+      </div>
+    </div>
+    <div class="plyta2">
+      2
+    </div>
+  </body>
+</html>
