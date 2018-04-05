@@ -1,0 +1,15 @@
+*{
+  font-family: arial;
+}
+
+h1, h2{
+  color: #EE3E80;
+}
+
+p:nth-child(4){
+  color: #9A796D;
+}
+
+span{
+  font-style: italic;
+}
