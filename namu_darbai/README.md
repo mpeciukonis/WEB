@@ -39,3 +39,35 @@
 ## HTML7
 
 * Puikiai.
+
+## HTML8
+
+* Gerai. table elementas per daug įtrauktas.
+
+## HTML9
+
+* Puikiai.
+
+## HTML10
+
+* Puikiai.
+
+## HTML11
+
+* Puikiai.
+
+## HTML12
+
+* Puikiai.
+
+## HTML13
+
+* Puikiai.
+
+## CSS1
+
+* Puikiai.
+
+## CSS2
+
+* Puikiai.
