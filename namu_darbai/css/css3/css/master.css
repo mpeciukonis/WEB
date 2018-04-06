@@ -1,0 +1,38 @@
+div{
+  width: 900px;
+  height: 100%;
+}
+
+h1, h2, h3, span.blue{
+  color: #0087D6;
+  font-weight: normal;
+}
+
+h1{
+  text-shadow: 2px 2px 2px grey;
+  font-family: serif;
+}
+
+h3{
+  text-transform: uppercase;
+  font-family: arial;
+  letter-spacing: 2px;
+}
+
+p{
+  font-family: sans-serif;
+}
+
+span.strong{
+  font-weight: bolder;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+  font-style: italic;
+}
+
+p.footer{
+  text-align: right;
+}
