@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+
+
+    <script type="text/javascript">
+      var vardas = prompt("Koks tavo vardas?", "Anonimas"); //ivedimo laukas
+      var pavarde = prompt("Kokia tavo pavarde?", "Anoniminis");
+      var amzius = prompt("Kiek tau metu?", "400");
+
+      switch (vardas) {
+        case "Petras":
+          alert("Petrai, cia tu? Uzeik!");
+          break;
+        case "Jonas":
+          alert("Jonai, tau negalima.");
+          break;
+        case "Maryte":
+          alert("Maryte, palauk uz duru.");
+          break;
+        default:
+          alert("Kas tu toks?");
+
+      }
+
+      if (amzius<18) {
+        alert("Jus neturite teises uzeiti i sita puslapi, " + vardas + " " + pavarde + "!");
+      }
+      else {
+        alert("Sveiki atvyke " + vardas + " " + pavarde + "! Jums yra " + amzius + " metu.");
+      }
+    </script>
+  </body>
+</html>

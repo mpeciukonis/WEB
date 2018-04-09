@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var kodas = prompt("Pasirinkite gerima: ");
+      var gerimas = kavosAparatas(kodas);
+
+      function kavosAparatas(kodas){
+        //1 - juoda kava
+        //2 - kava su pienu
+        //3 - late
+        //4 - karstas sokoladas
+        //bet kas kitas - karstas vanduo
+        // switch (kodas) {
+        //   case "1":
+        //     return "Juoda kava. Megaukites!";
+        //     break;
+        //   case "2":
+        //     return "Kava su pienu. Megaukites!";
+        //     break;
+        //   case "3":
+        //     return "Late. Megaukites!";
+        //     break;
+        //   case "4":
+        //     return "Karstas sokoladas. Megaukites!";
+        //     break;
+        //   default:
+        //     return "Pasitraukite, purksiu karsta vandeni!!!";
+        // }
+
+        if (kodas == 1) {
+          return "Juoda kava. Megaukites!";
+        } else if (kodas == 2) {
+          return "Kava su pienu. Megaukites!";
+        } else if (kodas == 3) {
+          return "Late. Megaukites!";
+        } else if (kodas == 4) {
+          return "Karstas sokoladas. Megaukites!";
+        } else {
+          return "Pasitraukite, purksiu karsta vandeni!!!";
+        }
+
+      }
+      alert(gerimas);
+    </script>
+  </body>
+</html>
