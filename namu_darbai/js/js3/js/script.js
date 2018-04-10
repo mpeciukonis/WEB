@@ -1,4 +1,4 @@
-var amzius = prompt("Koks jusu amzius?")
+var amzius = prompt("Koks jusu amzius?");
 
 if (amzius >= 18) {
   alert("Sveiki atvyke i svetaine!");
