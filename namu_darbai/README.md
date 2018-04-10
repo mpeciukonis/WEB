@@ -79,3 +79,36 @@
 ## CSS4
 
 * Puikiai.
+
+## CSS5
+
+* Puikiai.
+
+## CSS6
+
+* Nėra :(((.
+
+## CSS7
+
+* Puikiai.
+
+## CSS8
+
+* Puikiai.
+
+## JS1
+
+* Puikiai.
+
+## JS2
+
+* Negerai. Reikia funkcijos, kuri atvaizduoja, o ne grąžina.
+
+## JS3
+
+* Negerai. Nes užduotyje prašoma funkcijos.
+
+## JS4
+
+* Negerai. Atitraukimai nuo krašto ir reikia funkcijos. Pratinamės rašyti funkcijas kiekviename žingsnyje.
+
