@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var masyvas1 = ["obuoliai", "bananai"];
+      var masyvas2 = ["morkos", "bulves"];
+      var masyvas3 = masyvas2.concat(masyvas1); //sujungia du masyvus i viena
+
+      // for (var i = 0; i < masyvas3.length; i++) {
+      //   console.log(masyvas3[i]);
+      // }
+
+      var ilgis = masyvas3.push("avokadai");
+
+      for (var i = 0; i < ilgis; i++) {
+        console.log(masyvas3[i]);
+      }
+    </script>
+  </body>
+</html>

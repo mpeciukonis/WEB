@@ -32,6 +32,21 @@
         //     return "Pasitraukite, purksiu karsta vandeni!!!";
         // }
 
+        // if (kodas == 1) {
+        //   return "Juoda kava. Megaukites!";
+        // } else if (kodas == 2) {
+        //   return "Kava su pienu. Megaukites!";
+        // } else if (kodas == 3) {
+        //   return "Late. Megaukites!";
+        // } else if (kodas == 4) {
+        //   return "Karstas sokoladas. Megaukites!";
+        // } else {
+        //   return "Pasitraukite, purksiu karsta vandeni!!!";
+        // }
+
+        if (isNaN(kodas)) {//ar tai ne skaicius
+          return "Klaida";
+        }
         if (kodas == 1) {
           return "Juoda kava. Megaukites!";
         } else if (kodas == 2) {
@@ -43,6 +58,8 @@
         } else {
           return "Pasitraukite, purksiu karsta vandeni!!!";
         }
+
+
 
       }
       alert(gerimas);

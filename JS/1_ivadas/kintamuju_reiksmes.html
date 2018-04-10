@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var kintamasis1 = "";
+      var kintamasis2 = undefined;
+      var kintamasis3 = 0;
+      var kintamasis4 = Number("a"); //NaN
+      var kintamasis5 = null;
+      //traktuojama, kad kintamasis neturi reiksmes
+      var vardas = prompt("Koks jusu vardas?", "");
+      var kompanija = prompt("Jusu imone:", "");
+
+      alert("Sveiki, " + (vardas || kompanija || "kliente")); //ima viena is situ triju (jei vienas nors yra)
+    </script>
+  </body>
+</html>

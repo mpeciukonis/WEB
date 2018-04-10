@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var studentas1 = {
+        name: "Jonas",
+        surname: "Jonaitis",
+        ugis: 180
+      }
+
+      var studentas2 = {
+        name: "Petras",
+        surname: "Petraitis",
+        ugis: 200
+      }
+
+      console.log(studentas1.name);
+      console.log(studentas2.name);
+
+      var studentuMasyvas = [studentas1, studentas2];
+
+      console.log(studentuMasyvas);
+
+      for (var i = 0; i < studentuMasyvas.length; i++) {
+        console.log(studentuMasyvas[i].name);
+      }
+    </script>
+  </body>
+</html>
