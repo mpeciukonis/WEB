@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      var vardai = ["Jonas", "Petras", "Martynas", "Ona", "Urte", "Ema"];
+      var nepageidaujamasVardas = "Ona";
+      var naujasMasyvas = [];
+
+      function grazintiNaujaMasyva(masyvas, masyvas2, vardas){
+        for (var i = 0; i < masyvas.length; i++) {
+          if (masyvas[i]==vardas) {
+            continue;
+          }
+          masyvas2.push(masyvas[i]);
+        }
+        console.log(masyvas2); //kad patikrinti
+        return masyvas2;
+      }
+
+      grazintiNaujaMasyva(vardai, naujasMasyvas, nepageidaujamasVardas);
+    </script>
+  </body>
+</html>
