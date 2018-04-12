@@ -1,7 +1,11 @@
-var amzius = prompt("Koks jusu amzius?");
+function kiekTauMetu(){
+  amzius = prompt("Koks jusu amzius?");
 
-if (amzius >= 18) {
-  alert("Sveiki atvyke i svetaine!");
-} else {
-  alert("Deja, bet i svetaine uzeiti negalite");
+  if (amzius >= 18) {
+    alert("Sveiki atvyke i svetaine!");
+  } else {
+    alert("Deja, bet i svetaine uzeiti negalite");
+  }
 }
+
+kiekTauMetu();
