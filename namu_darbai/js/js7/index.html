@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      var vardai = ["Jonas", "Petras", "Martynas", "Ona", "Urte", "Ema"];
+      var nepageidaujamasVardas = "Petras";
+
+      function spausdintiVardus(masyvas, vardas){
+        for (var i = 0; i < masyvas.length; i++) {
+          if (masyvas[i]==vardas) {
+            continue;
+          }
+          console.log(masyvas[i]);
+        }
+      }
+
+      spausdintiVardus(vardai, nepageidaujamasVardas);
+    </script>
+  </body>
+</html>
