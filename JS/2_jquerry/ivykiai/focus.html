@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <input type="text" name="" value="">
+    <input type="text" name="" value="">
+    <input type="text" name="" value="">
+    <input type="text" name="" value="">
+    <input type="text" name="" value="">
+    <input type="text" name="" value="">
+    <script src="js/jquery.js"></script>
+    <script>
+      $("input[type='text']").focus(function(){
+        // $(this).css("background-color", "blue");
+        $(this).val("asd");
+      });
+
+      $("input[type='text']").focusout(function(){
+        // $(this).css("background-color", "white");
+        $(this).val("");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+      <table>
+        <tr>
+          <td colspan="3"><input id="result"></td>
+        </tr>
+        <tr>
+          <td><button>7</button></td>
+          <td><button>8</button></td>
+          <td><button>9</button></td>
+        </tr>
+        <tr>
+          <td><button>4</button></td>
+          <td><button>5</button></td>
+          <td><button>6</button></td>
+        </tr>
+        <tr>
+          <td><button>1</button></td>
+          <td><button>2</button></td>
+          <td><button>3</button></td>
+        </tr>
+        <tr>
+          <td><button>0</button></td>
+          <td><button>+</button></td>
+          <td><button>-</button></td>
+        </tr>
+        <tr>
+          <td><button>=</button></td>
+        </tr>
+
+      </table>
+    <script src="js/jquery.js"></script>
+    <script>
+      $("button").click(function(){
+
+        var mygtukoReiksme = $(this).text();
+        if (mygtukoReiksme != "=") {
+          var result = $("#result").val();
+          $("#result").val(result + mygtukoReiksme);
+        }
+        else {
+          var apskaiciuota = eval($("#result").val());
+          $("#result").val(apskaiciuota)
+        }
+      });
+    </script>
+  </body>
+</html>

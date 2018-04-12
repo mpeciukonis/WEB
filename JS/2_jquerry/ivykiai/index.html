@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .box{
+        width: 200px;
+        height: 200px;
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+
+    <script src="js/jquery.js"></script>
+    <script>
+      $(".box").click(function(){
+        $(".box").text("OPA");
+        // $(".box").css("display", "none");
+
+        var aukstis = $(".box").css("width"); //suzinoti reiksme
+        $(".box").text(aukstis);
+      });
+
+      // $(".box").hover(function(){
+      //   $(".box").css("background-color", "purple");
+      // });
+
+      $(".box").mouseenter(function(){
+        $(this).css("background-color", "purple"); //this naudojamas konkreciam elementui, ant kurio uzvedama
+      });
+
+      $(".box").mouseleave(function(){
+        $(this).css("background-color", "red");
+      });
+    </script>
+  </body>
+</html>
