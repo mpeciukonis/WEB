@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script src="js/jquery.js"></script>
+    <script>
+      function sukurtiDivElementa(){
+        return $("<div>");
+      }
+
+      var elementas = sukurtiDivElementa();
+      elementas.text("Opa");
+      elementas.attr("class", "box");
+      elementas.prop("id", "super_box");
+      elementas.css("width", "100px");
+      elementas.css("height", "100px");
+      elementas.css("border", "1px solid black");
+
+      $("body").append(elementas);
+    </script>
+  </body>
+</html>

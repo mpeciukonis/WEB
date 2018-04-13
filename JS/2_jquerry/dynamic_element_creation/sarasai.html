@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script src="js/jquery.js"></script>
+    <script>
+      var prekes = ["obuolys", "guma", "piestukai", "abrikosas"];
+      var ol = $("<ol>");
+
+      $.each(prekes, function(index, value){   //jquerinis for ciklas
+        var li = $("<li>");
+        li.text(value);
+        ol.append(li);
+      });
+
+      $("body").append(ol);
+
+    </script>
+  </body>
+</html>

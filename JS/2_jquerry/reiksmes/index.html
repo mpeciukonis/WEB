@@ -31,23 +31,71 @@
         </tr>
         <tr>
           <td><button>=</button></td>
+          <td><button>/</button></td>
+          <td><button>*</button></td>
         </tr>
 
       </table>
     <script src="js/jquery.js"></script>
+    <script src="js/calculator.js"></script>
     <script>
-      $("button").click(function(){
+      // $("button").click(function(){
+      //
+      //   var mygtukoReiksme = $(this).text();
+      //   if (mygtukoReiksme != "=") {
+      //     var result = $("#result").val();
+      //     $("#result").val(result + mygtukoReiksme);
+      //   }
+      //   else {
+      //     var apskaiciuota = eval($("#result").val());
+      //     $("#result").val(apskaiciuota)
+      //   }
+      var operation;
+      var firstNumber;
+      var secondNumber;
 
+      $("button").click(function(){
         var mygtukoReiksme = $(this).text();
+
         if (mygtukoReiksme != "=") {
-          var result = $("#result").val();
-          $("#result").val(result + mygtukoReiksme);
+          //atliekam kitus veiksmus
+          if (isNaN(mygtukoReiksme)) {
+            operation = mygtukoReiksme;
+          }
+          else {
+            $("#result").val(mygtukoReiksme);
+            if (firstNumber) {
+              secondNumber = mygtukoReiksme;
+            }
+            else {
+              firstNumber = mygtukoReiksme;
+            }
+          }
         }
         else {
-          var apskaiciuota = eval($("#result").val());
-          $("#result").val(apskaiciuota)
+          if (operation == "+") {
+            var result = Add(firstNumber, secondNumber);
+            $("#result").val(result);
+          }
+          if (operation == "-") {
+            var result = Subtract(firstNumber, secondNumber);
+            $("#result").val(result);
+          }
+          if (operation == "*") {
+            var result = Multiply(firstNumber, secondNumber);
+            $("#result").val(result);
+          }
+          if (operation == "/") {
+            var result = Divide(firstNumber, secondNumber);
+            $("#result").val(result);
+          }
         }
+
+        //prideti, kad 2 ir daugiau skaiciu galima butu rasyt
+        //prideti trynima
+        //paziureti su dalyba (po antro karto idomiai vieikia)
       });
+
     </script>
   </body>
 </html>

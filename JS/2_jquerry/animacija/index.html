@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .box{
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        float:left;
+        margin: 2px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+
+    <script src="js/jquery.js"></script>
+    <script>
+    function manoAnimacija(elementas){
+      elementas.animate({"height":"200px", "width":"200px"},
+      function(){
+        //funkcija, kurioj kodas vykdys kai baigsis animacija
+        elementas.animate({"height":"100px", "width":"100px"}, function(){
+          manoAnimacija(elementas); //rekursija - sliekas pats save valgo
+        });
+      });
+    }
+
+
+      $("div").click(function(){
+        manoAnimacija($(this));
+      });
+
+          //objektas su pakitimais css, antras yra laikas per kuri keiciasi
+
+
+
+    </script>
+  </body>
+</html>
