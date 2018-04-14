@@ -112,3 +112,22 @@
 
 * Negerai. Atitraukimai nuo krašto ir reikia funkcijos. Pratinamės rašyti funkcijas kiekviename žingsnyje.
 
+## JS5
+
+* Puikiai.
+
+## JS6
+
+* Puikiai.
+
+## JS7
+
+* Puikiai.
+
+## JS8
+
+* Gerai. Tuščią naują masyvą galima apsibrėžti funkcijos viduje ir grąžinti. Nereikia tuščios funkcijos perduoti kaip argumento funkcijai.
+
+## JS9 
+
+* Puikiai.
