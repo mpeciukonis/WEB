@@ -8,9 +8,9 @@
     <script>
       var vardai = ["Jonas", "Petras", "Martynas", "Ona", "Urte", "Ema"];
       var nepageidaujamasVardas = "Ona";
-      var naujasMasyvas = [];
 
-      function grazintiNaujaMasyva(masyvas, masyvas2, vardas){
+      function grazintiNaujaMasyva(masyvas, vardas){
+        var masyvas2 = [];
         for (var i = 0; i < masyvas.length; i++) {
           if (masyvas[i]==vardas) {
             continue;
@@ -21,7 +21,7 @@
         return masyvas2;
       }
 
-      grazintiNaujaMasyva(vardai, naujasMasyvas, nepageidaujamasVardas);
+      grazintiNaujaMasyva(vardai, nepageidaujamasVardas);
     </script>
   </body>
 </html>
