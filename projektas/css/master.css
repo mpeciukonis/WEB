@@ -1,0 +1,15 @@
+.carousel-item img{
+    width: 100%;
+    height: 450px;
+    display: block;
+    object-fit: contain;
+}
+
+.navbar-light {
+  background-color: #EDFFEC;
+  /* nesikeicia spalva */
+}
+
+body{
+  background-color: #48435C;
+}
