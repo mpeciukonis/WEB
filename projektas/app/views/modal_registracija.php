@@ -22,6 +22,11 @@
             <label>Slaptažodis</label>
             <input type="password" name="pwd" class="form-control" placeholder="Slaptažodis">
           </div>
+          <div class="form-group">
+            <label>Keletą žodžių apie save</label>
+            <textarea type="text" name="info" class="form-control" placeholder="Esu pradedantysis/vidutinis/pažengęs meistras, dirbu su medžiu/plastmase/metalu."></textarea>
+          </div>
+          <small class="form-text text-muted">Prašome naudoti tik lotyniškus simbolius (be lt raidžių)</small><br/>
           <button type="submit" class="btn btn-default" name="submit">Registruotis</button>
           <button type="button" class="btn btn-default" data-dismiss="modal">Uždaryti</button>
         </form>

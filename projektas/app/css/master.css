@@ -2,13 +2,18 @@
     width: 100%;
 }
 
-.article, .box, .footer_map, .footer, .profile_picture{
+.box, .footer_map, .footer, .profile_picture, .profile_info, .table_works{
   margin: 20px;
 }
 
 .article, .footer_article{
   height: 100%;
   padding: 40px;
+}
+
+.article{
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 body{
@@ -34,7 +39,7 @@ a{
   font-size: 14pt;
 }
 
-.box, .profile_picture{
+.box{
   height: 350px;
   background-position: center;
 }
@@ -44,10 +49,7 @@ a{
   color: white;
 }
 
-.footer_article{
-  text-align: right;
-}
-
-.profile_picture{
-  object-fit: contain;
+.profile_picture img, .search_image img{
+  max-width: 350px;
+  max-height: 350px;
 }

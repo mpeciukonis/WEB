@@ -1,5 +1,5 @@
 <footer>
-  <div class=" footer">
+  <div class="footer">
     <div class="row">
       <div class="col-sm-12 col-md-6 col-lg-4">
         <div class="footer_map">
@@ -8,14 +8,16 @@
       </div>
       <div class="col-sm-12 col-md-6 col-lg-8">
         <div class="footer_article">
-          <aside class="article_aside">
+          <aside>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <h4>Susisiekite su mumis!</h4><br />
-            <ul class="list-unstyled">
-              <li>Email: testas@email.com</li>
-              <li>Adresas: Vilnius, Katedros g. 12, 13131</li>
-              <li>Telefonas: +3701231234123</li>
-            </ul>
+            <address>
+              <ul class="list-unstyled">
+                <li>Email: testas@email.com</li>
+                <li>Adresas: Vilnius, Katedros g. 12, 13131</li>
+                <li>Telefonas: +3701231234123</li>
+              </ul>
+            </address>
           </aside>
         </div>
       </div>
