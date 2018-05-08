@@ -6,14 +6,17 @@
       </div>
       <div class="modal-body">
         <form class="login-form" action="../app/includes/login.inc.php" method="POST">
-          <p>Įveskite el. paštą: <input type="text" name="email"/><br /></p>
-          <p>Įveskite slaptažodį: <input type="password" name="password"/><br /></p>
-          <input type="submit" class="btn btn-default" data-dismiss="modal" name="submit" />
+          <div class="form-group">
+            <label>Elektroninis paštas</label>
+            <input type="email" name="email" class="form-control" placeholder="Jūsų elektroninis paštas">
+          </div>
+          <div class="form-group">
+            <label>Slaptažodis</label>
+            <input type="password" name="password" class="form-control" placeholder="Jūsų slaptažodis">
+          </div>
+          <button type="submit" class="btn btn-default" name="submit" />Prisijungti</button>
           <button type="button" class="btn btn-default" data-dismiss="modal">Uždaryti</button>
         </form>
-      </div>
-      <div class="modal-footer">
-
       </div>
     </div>
   </div>

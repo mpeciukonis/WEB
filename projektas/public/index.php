@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -18,10 +19,6 @@
         include_once '../app/views/article.php';
         include_once '../app/views/works_gallery.php';
         include_once '../app/views/footer.php';
-
-        if (isset($_SESSION['u_id'])) {
-          echo "<p>Prisijungete sekmingai!</p>";
-        }
       ?>
     </div>
 
