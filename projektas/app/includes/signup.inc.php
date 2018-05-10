@@ -11,7 +11,7 @@
       header("Location: ../../public/index.php?signup=empty");
       exit();
     } else {
-      if (!preg_match("/^[a-zA-Z]*$/", $first) || !preg_match("/^[a-zA-Z]*$/", $last) || !preg_match("/^[a-zA-Z]*$/", $info)){
+      if (!preg_match("/^[a-zA-Z]*$/", $first) || !preg_match("/^[a-zA-Z]*$/", $last)){
         header("Location: ../../public/index.php?signup=invalid");
         exit();
       } else {

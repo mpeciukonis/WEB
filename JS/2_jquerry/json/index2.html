@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .container{
+        height: 550px;
+        width: 400px;
+        float: left;
+        margin: 10px;
+        opacity: 0;
+      }
+
+      .left, .right{
+        width: 50%;
+        float: left;
+      }
+
+      .box{
+        padding: 20px;
+      }
+
+      .left .box{
+        background-color: grey;
+      }
+
+      img{
+        width: 100%;
+      }
+
+      .img_row{
+        min-height: 270px;
+      }
+    </style>
+  </head>
+  <body>
+<!--
+    <div class="container">
+      <div class="row">
+        <img src="images/jonas.jpg">
+      </div>
+      <div class="row">
+        <div class="left">
+          <div class="box">
+            Vardas
+          </div>
+        </div>
+        <div class="right">
+          <div class="box">
+            Jonas
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="left">
+          <div class="box">
+            Pavarde
+          </div>
+        </div>
+        <div class="right">
+          <div class="box">
+            Jonaitis
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="left">
+          <div class="box">
+            Amzius
+          </div>
+        </div>
+        <div class="right">
+          <div class="box">
+            28
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="left">
+          <div class="box">
+            Aprasymas
+          </div>
+        </div>
+        <div class="right">
+          <div class="box">
+            Jonas yra kietas, jis yra studentas.
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/profile_generator.js"></script>
+    <script>
+      var studentas1 = {
+        name: "Jonas",
+        surname: "Jonaitis",
+        age: 28,
+        photo: "images/jonas.jpg",
+        description: "Jonas yra kietas, jis yra studentas."
+      }
+
+      var studentas2 = {
+        name: "Petras",
+        surname: "Petraitis",
+        age: 50,
+        photo: "images/petras.jpg",
+        description: "Petras yra irgi kietas, bet jau jis senai studentas."
+      }
+
+      var masyvas = [studentas1, studentas2];
+
+      $.each(masyvas, function(index, value){
+        var container = getContainer(value);
+        $("body").prepend(container);
+        container.animate({opacity:1}, 3000);
+      });
+    </script>
+  </body>
+</html>

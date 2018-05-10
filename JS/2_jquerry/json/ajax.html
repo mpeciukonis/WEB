@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .container{
+        height: 550px;
+        width: 400px;
+        float: left;
+        margin: 10px;
+      }
+
+      .left, .right{
+        width: 50%;
+        float: left;
+      }
+
+      .box{
+        padding: 20px;
+      }
+
+      .left .box{
+        background-color: grey;
+      }
+
+      img{
+        width: 100%;
+      }
+
+      .img_row{
+        min-height: 270px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/profile_generator.js"></script>
+    <script>
+      $.ajax({
+        url: "http://localhost:3000",
+        dataType: "json"
+      })
+      .done(function(data){
+        //veiksmai, kai padarytas, kai viskas ok
+        console.log(data);
+        var container = getContainer(data);
+        $("body").prepend(container);
+      })
+      .fail(function(jqXHR, textStatus){
+        //veiksmai, kai nepadarytas, kai kazkas negerai
+        alert(textStatus);
+      })
+      .always(function(){
+        //veiksmai vykdomi visada
+      });
+
+
+    </script>
+  </body>
+</html>
