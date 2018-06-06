@@ -23,6 +23,10 @@
             <input type="password" name="pwd" class="form-control" placeholder="Slaptažodis">
           </div>
           <div class="form-group">
+            <label>Pakartokite slaptažodį</label>
+            <input type="password" name="pwd_again" class="form-control" placeholder="Slaptažodis">
+          </div>
+          <div class="form-group">
             <label>Keletą žodžių apie save</label>
             <textarea type="text" name="info" class="form-control" placeholder="Esu pradedantysis/vidutinis/pažengęs meistras, dirbu su medžiu/plastmase/metalu."></textarea>
           </div>

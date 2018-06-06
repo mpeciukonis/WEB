@@ -5,6 +5,7 @@
     $last = mysqli_real_escape_string($conn, $_POST['last']);
     $email = mysqli_real_escape_string($conn, $_POST['email']);
     $pwd = mysqli_real_escape_string($conn, $_POST['pwd']);
+    $pwd_again = mysqli_real_escape_string($conn, $_POST['pwd_again']);
     $info = mysqli_real_escape_string($conn, $_POST['info']);
 
     if (empty($first) || empty($last) || empty($email) || empty($pwd)) {
@@ -25,12 +26,15 @@
           if ($result_check > 0) {
             header("Location: ../../public/index.php?signup=usertaken");
             exit();
-          } else {
-            $hashedPwd = password_hash($pwd, PASSWORD_DEFAULT);
-            $sql = "INSERT INTO users (user_first, user_last, user_email, user_pwd, user_info) VALUES('$first', '$last', '$email', '$hashedPwd', '$info');";
-            mysqli_query($conn, $sql);
-            header("Location: ../../public/index.php?signup=success");
-            exit();
+          } if ($pwd != $pwd_again) {
+              header("Location: ../../public/index.php?signup=invalidpass");
+              exit();
+            } else {
+              $hashedPwd = password_hash($pwd, PASSWORD_DEFAULT);
+              $sql = "INSERT INTO users (user_first, user_last, user_email, user_pwd, user_info) VALUES('$first', '$last', '$email', '$hashedPwd', '$info');";
+              mysqli_query($conn, $sql);
+              header("Location: ../../public/index.php?signup=success");
+              exit();
           }
         }
       }
