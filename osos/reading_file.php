@@ -28,7 +28,7 @@
 
                 $fp = fopen('results.json', 'w'); //kuriam nauja json faila
                 fwrite($fp, json_encode($athletes)); //rasom atletus, sudarom json struktura
-                fclose($fp); //
+                fclose($fp); //uzdarom faila
           }
        }
        else {
