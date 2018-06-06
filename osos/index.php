@@ -5,18 +5,10 @@
     <title></title>
   </head>
   <body>
-    <table>
-      <form action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="post" enctype="multipart/form-data">
-        <tr>
-          <td>Select file</td>
-          <td><input type="file" name="file" id="file" /></td>
-        </tr>
-        <tr>
-          <td>Submit</td>
-          <td><input type="submit" name="submit" /></td>
-        </tr>
-      </form>
-    </table>
+    <form action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="post" enctype="multipart/form-data">
+      <p>Select file: <input type="file" name="file" id="file" /></p></br>
+      <p>Submit <input type="submit" name="submit" /></p>
+    </form>
 
     <?php
     include_once 'clases.php';

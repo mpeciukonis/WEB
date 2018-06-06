@@ -2,7 +2,7 @@
   class Athlete{
     public $name, $hundred_meters, $long_jump, $shot_put, $high_jump, $four_hundred_meters, $hundred_ten_hurdles, $discus_throw, $pole_vault, $javelin_throw, $one_half_kilometers, $total_score;
 
-    public function __construct($Name, $Event_1, $Event_2, $Event_3, $Event_4, $Event_5, $Event_6, $Event_7, $Event_8, $Event_9, $Event_10){
+    public function __construct($Name, $Event_1, $Event_2, $Event_3, $Event_4, $Event_5, $Event_6, $Event_7, $Event_8, $Event_9, $Event_10){ //konstruojam klase
       $this -> name = $Name;                      //name and suranme
       $this -> hundred_meters = $Event_1;         //100m (seconds)
       $this -> long_jump = $Event_2;              //long jump (metres)
@@ -17,7 +17,7 @@
       $this -> calculateTotalScore($Event_1, $Event_2, $Event_3, $Event_4, $Event_5, $Event_6, $Event_7, $Event_8, $Event_9, $Event_10);              //total score
     }
 
-    private function calculateTotalScore($ev1, $ev2, $ev3, $ev4, $ev5, $ev6, $ev7, $ev8, $ev9, $ev10){
+    private function calculateTotalScore($ev1, $ev2, $ev3, $ev4, $ev5, $ev6, $ev7, $ev8, $ev9, $ev10){ //funkcija paskaiciuoti total score, koeficientai ir formules paimti iš wiki
       $total_result = 0;
       $total_result = intval(25.4347*(pow((18-$ev1), 1.81)));
       $total_result = $total_result + intval(0.14354*(pow(($ev2*100-220), 1.4)));
