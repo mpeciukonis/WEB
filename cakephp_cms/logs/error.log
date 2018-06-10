@@ -1,0 +1,571 @@
+2018-06-10 13:06:39 Error: [Cake\View\Exception\MissingTemplateException] Template file "Articles\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Articles\\index.ctp',
+)
+Request URL: /articles
+Stack Trace:
+#0 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\View\View.php(799): Cake\View\View->_getViewFileName('Articles\\index')
+#1 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Controller\Controller.php(777): Cake\View\View->render(NULL, NULL)
+#2 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#3 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ArticlesController))
+#4 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\mokymai_vcs\cms\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\mokymai_vcs\cms\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-06-10 13:06:46 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Index could not be found.
+Exception Attributes: array (
+  'class' => 'Index',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /index
+Stack Trace:
+#0 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\mokymai_vcs\cms\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\mokymai_vcs\cms\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2018-06-10 13:08:11 Error: [Cake\View\Exception\MissingTemplateException] Template file "Articles\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Articles\\index.ctp',
+)
+Request URL: /articles
+Stack Trace:
+#0 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\View\View.php(799): Cake\View\View->_getViewFileName('Articles\\index')
+#1 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Controller\Controller.php(777): Cake\View\View->render(NULL, NULL)
+#2 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#3 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ArticlesController))
+#4 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\mokymai_vcs\cms\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\mokymai_vcs\cms\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-06-10 13:10:13 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Index could not be found.
+Exception Attributes: array (
+  'class' => 'Index',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /index
+Stack Trace:
+#0 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\mokymai_vcs\cms\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\mokymai_vcs\cms\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2018-06-10 13:10:22 Error: [Cake\Controller\Exception\MissingActionException] Action ArticlesController::view() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'ArticlesController',
+  'action' => 'view',
+  'prefix' => '',
+  'plugin' => false,
+)
+Request URL: /articles/view/first-post
+Referer URL: http://localhost:8765/articles
+Stack Trace:
+#0 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#1 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ArticlesController))
+#2 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\mokymai_vcs\cms\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\mokymai_vcs\cms\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2018-06-10 13:13:03 Error: [Cake\View\Exception\MissingTemplateException] Template file "Articles\view.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Articles\\view.ctp',
+)
+Request URL: /articles/view/first-post
+Referer URL: http://localhost:8765/articles/index
+Stack Trace:
+#0 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\View\View.php(799): Cake\View\View->_getViewFileName('Articles\\view')
+#1 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Controller\Controller.php(777): Cake\View\View->render(NULL, NULL)
+#2 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#3 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ArticlesController))
+#4 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\mokymai_vcs\cms\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\mokymai_vcs\cms\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-06-10 13:13:38 Error: [Cake\Controller\Exception\MissingActionException] Action ArticlesController::edit() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'ArticlesController',
+  'action' => 'edit',
+  'prefix' => '',
+  'plugin' => false,
+)
+Request URL: /articles/edit/first-post
+Referer URL: http://localhost:8765/articles/view/first-post
+Stack Trace:
+#0 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#1 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ArticlesController))
+#2 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\mokymai_vcs\cms\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\mokymai_vcs\cms\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2018-06-10 13:14:49 Error: [Cake\Controller\Exception\MissingActionException] Action ArticlesController::edit() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'ArticlesController',
+  'action' => 'edit',
+  'prefix' => '',
+  'plugin' => false,
+)
+Request URL: /articles/edit/first-post
+Referer URL: http://localhost:8765/articles/view/first-post
+Stack Trace:
+#0 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#1 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ArticlesController))
+#2 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\mokymai_vcs\cms\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\mokymai_vcs\cms\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2018-06-10 13:17:03 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'slug' doesn't have a default value
+Request URL: /articles/add
+Referer URL: http://localhost:8765/articles/add
+Stack Trace:
+#0 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(195): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Database\Connection.php(334): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#5 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#6 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#7 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\ORM\Table.php(2102): Cake\Database\Query->execute()
+#8 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\ORM\Table.php(1996): Cake\ORM\Table->_insert(Object(App\Model\Entity\Article), Array)
+#9 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\ORM\Table.php(1909): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Article), Object(ArrayObject))
+#10 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\ORM\Table.php(1624): Cake\ORM\Table->Cake\ORM\{closure}()
+#11 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Database\Connection.php(726): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#12 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\ORM\Table.php(1625): Cake\Database\Connection->transactional(Object(Closure))
+#13 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\ORM\Table.php(1910): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#14 C:\mokymai_vcs\cms\src\Controller\ArticlesController.php(41): Cake\ORM\Table->save(Object(App\Model\Entity\Article))
+#15 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\ArticlesController->add()
+#16 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#17 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ArticlesController))
+#18 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\mokymai_vcs\cms\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#28 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#30 C:\mokymai_vcs\cms\webroot\index.php(40): Cake\Http\Server->run()
+#31 {main}
+
+
+2018-06-10 13:18:57 Error: [ParseError] syntax error, unexpected 'public' (T_PUBLIC), expecting end of file
+Request URL: /articles
+Stack Trace:
+#0 C:\mokymai_vcs\cms\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\mokymai_vcs\\...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Model\\Table...')
+#2 [internal function]: spl_autoload_call('App\\Model\\Table...')
+#3 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\Model\\Table...')
+#4 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Model\\Table\\Ar...', 'App')
+#5 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(246): Cake\Core\App::className('Articles', 'Model/Table', 'Table')
+#6 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(194): Cake\ORM\Locator\TableLocator->_getClassName('Articles', Array)
+#7 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Datasource\ModelAwareTrait.php(112): Cake\ORM\Locator\TableLocator->get('Articles')
+#8 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Controller\Controller.php(377): Cake\Controller\Controller->loadModel('Articles')
+#9 C:\mokymai_vcs\cms\src\Controller\ArticlesController.php(21): Cake\Controller\Controller->__get('Articles')
+#10 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\ArticlesController->index()
+#11 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#12 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ArticlesController))
+#13 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\mokymai_vcs\cms\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\mokymai_vcs\cms\webroot\index.php(40): Cake\Http\Server->run()
+#26 {main}
+
+
+2018-06-10 13:20:10 Error: [ParseError] syntax error, unexpected 'public' (T_PUBLIC), expecting end of file
+Request URL: /articles
+Stack Trace:
+#0 C:\mokymai_vcs\cms\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\mokymai_vcs\\...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Model\\Table...')
+#2 [internal function]: spl_autoload_call('App\\Model\\Table...')
+#3 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\Model\\Table...')
+#4 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Model\\Table\\Ar...', 'App')
+#5 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(246): Cake\Core\App::className('Articles', 'Model/Table', 'Table')
+#6 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(194): Cake\ORM\Locator\TableLocator->_getClassName('Articles', Array)
+#7 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Datasource\ModelAwareTrait.php(112): Cake\ORM\Locator\TableLocator->get('Articles')
+#8 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Controller\Controller.php(377): Cake\Controller\Controller->loadModel('Articles')
+#9 C:\mokymai_vcs\cms\src\Controller\ArticlesController.php(21): Cake\Controller\Controller->__get('Articles')
+#10 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\ArticlesController->index()
+#11 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#12 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ArticlesController))
+#13 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\mokymai_vcs\cms\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\mokymai_vcs\cms\webroot\index.php(40): Cake\Http\Server->run()
+#26 {main}
+
+
+2018-06-10 13:28:41 Error: [Cake\View\Exception\MissingTemplateException] Template file "Articles\edit.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Articles\\edit.ctp',
+)
+Request URL: /articles/edit/asdasd
+Referer URL: http://localhost:8765/articles/view/asdasd
+Stack Trace:
+#0 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\View\View.php(799): Cake\View\View->_getViewFileName('Articles\\edit')
+#1 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Controller\Controller.php(777): Cake\View\View->render(NULL, NULL)
+#2 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#3 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ArticlesController))
+#4 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\mokymai_vcs\cms\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\mokymai_vcs\cms\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-06-10 14:06:42 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::login() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+  'prefix' => '',
+  'plugin' => false,
+)
+Request URL: /users/login?redirect=%2Farticles%2Fadd
+Referer URL: http://localhost:8765/articles
+Stack Trace:
+#0 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#1 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\mokymai_vcs\cms\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\mokymai_vcs\cms\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2018-06-10 14:10:23 Error: [Error] Call to a member function allow() on boolean
+Request URL: /users/
+Stack Trace:
+#0 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Controller\Controller.php(272): App\Controller\AppController->initialize()
+#1 [internal function]: Cake\Controller\Controller->__construct(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(46): ReflectionClass->newInstance(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\mokymai_vcs\cms\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\mokymai_vcs\cms\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-06-10 14:17:09 Error: [ParseError] syntax error, unexpected '?>'
+Request URL: /users/add
+Stack Trace:
+#0 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\View\View.php(1201): Cake\View\View->_evaluate('C:\\mokymai_vcs\\...', Array)
+#1 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\View\View.php(803): Cake\View\View->_render('C:\\mokymai_vcs\\...')
+#2 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Controller\Controller.php(777): Cake\View\View->render(NULL, NULL)
+#3 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#4 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#5 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\mokymai_vcs\cms\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\mokymai_vcs\cms\webroot\index.php(40): Cake\Http\Server->run()
+#18 {main}
+
+
+2018-06-10 14:18:35 Error: Fatal Error (256): [ParseError] syntax error, unexpected 'public' (T_PUBLIC)
+#0 C:\mokymai_vcs\cms\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\mokymai_vcs\\...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 C:\mokymai_vcs\cms\src\Controller\ErrorController.php(24): spl_autoload_call('App\\Controller\\...')
+#3 C:\mokymai_vcs\cms\vendor\composer\ClassLoader.php(444): include('C:\\mokymai_vcs\\...')
+#4 C:\mokymai_vcs\cms\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\mokymai_vcs\\...')
+#5 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#6 [internal function]: spl_autoload_call('App\\Controller\\...')
+#7 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\Controller\\...')
+#8 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\Err...', 'App')
+#9 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Error\ExceptionRenderer.php(124): Cake\Core\App::className('Error', 'Controller', 'Controller')
+#10 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Error\ExceptionRenderer.php(91): Cake\Error\ExceptionRenderer->_getController()
+#11 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Error\ErrorHandler.php(136): Cake\Error\ExceptionRenderer->__construct(Object(Cake\Error\PHP7ErrorException))
+#12 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(193): Cake\Error\ErrorHandler->_displayException(Object(Cake\Error\PHP7ErrorException))
+#13 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(177): Cake\Error\BaseErrorHandler->handleException(Object(Cake\Error\PHP7ErrorException))
+#14 [internal function]: Cake\Error\BaseErrorHandler->wrapAndHandleException(Object(Cake\Error\PHP7ErrorException))
+#15 {main} in [C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Error\ErrorHandler.php, line 180]
+
+
+2018-06-10 14:18:35 Error: Fatal Error (256): [ParseError] syntax error, unexpected 'public' (T_PUBLIC)
+#0 C:\mokymai_vcs\cms\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\mokymai_vcs\\...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 C:\mokymai_vcs\cms\src\Controller\ErrorController.php(24): spl_autoload_call('App\\Controller\\...')
+#3 C:\mokymai_vcs\cms\vendor\composer\ClassLoader.php(444): include('C:\\mokymai_vcs\\...')
+#4 C:\mokymai_vcs\cms\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\mokymai_vcs\\...')
+#5 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#6 [internal function]: spl_autoload_call('App\\Controller\\...')
+#7 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\Controller\\...')
+#8 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\Err...', 'App')
+#9 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Error\ExceptionRenderer.php(124): Cake\Core\App::className('Error', 'Controller', 'Controller')
+#10 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Error\ExceptionRenderer.php(91): Cake\Error\ExceptionRenderer->_getController()
+#11 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Error\ErrorHandler.php(136): Cake\Error\ExceptionRenderer->__construct(Object(Cake\Error\FatalErrorException))
+#12 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(193): Cake\Error\ErrorHandler->_displayException(Object(Cake\Error\FatalErrorException))
+#13 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(231): Cake\Error\BaseErrorHandler->handleException(Object(Cake\Error\FatalErrorException))
+#14 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(139): Cake\Error\BaseErrorHandler->handleFatalError(256, '[ParseError] sy...', 'C:\\mokymai_vcs\\...', 180)
+#15 C:\mokymai_vcs\cms\vendor\cakephp\debug_kit\config\bootstrap.php(41): Cake\Error\BaseErrorHandler->handleError(256, '[ParseError] sy...', 'C:\\mokymai_vcs\\...', 180, Array)
+#16 [internal function]: Cake\Core\Plugin::{closure}(256, '[ParseError] sy...', 'C:\\mokymai_vcs\\...', 180, Array)
+#17 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Error\ErrorHandler.php(180): trigger_error('[ParseError] sy...', 256)
+#18 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Error\ErrorHandler.php(141): Cake\Error\ErrorHandler->_logInternalError(Object(ParseError))
+#19 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(193): Cake\Error\ErrorHandler->_displayException(Object(ParseError))
+#20 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(177): Cake\Error\BaseErrorHandler->handleException(Object(Cake\Error\PHP7ErrorException))
+#21 [internal function]: Cake\Error\BaseErrorHandler->wrapAndHandleException(Object(Cake\Error\PHP7ErrorException))
+#22 {main} in [C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Error\ErrorHandler.php, line 180]
+
+
+2018-06-10 14:18:35 Error: Fatal Error (256): [ParseError] syntax error, unexpected 'public' (T_PUBLIC)
+#0 C:\mokymai_vcs\cms\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\mokymai_vcs\\...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 C:\mokymai_vcs\cms\src\Controller\ErrorController.php(24): spl_autoload_call('App\\Controller\\...')
+#3 C:\mokymai_vcs\cms\vendor\composer\ClassLoader.php(444): include('C:\\mokymai_vcs\\...')
+#4 C:\mokymai_vcs\cms\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\mokymai_vcs\\...')
+#5 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#6 [internal function]: spl_autoload_call('App\\Controller\\...')
+#7 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\Controller\\...')
+#8 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\Err...', 'App')
+#9 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Error\Except in [C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Error\ErrorHandler.php, line 180]
+
+
+2018-06-10 14:27:48 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+Request URL: /articles/edit/4
+Referer URL: http://localhost:8765/users/view/1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-06-10 14:27:48 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+Request URL: /articles/edit/4
+Referer URL: http://localhost:8765/users/view/1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-06-10 14:27:48 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /articles/edit/4
+Referer URL: http://localhost:8765/users/view/1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-06-10 14:27:48 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /articles/edit/4
+Referer URL: http://localhost:8765/users/view/1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-06-10 14:27:48 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /articles/edit/4
+Referer URL: http://localhost:8765/users/view/1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-06-10 14:27:55 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "articles"
+Request URL: /articles/view/4
+Referer URL: http://localhost:8765/users/view/1
+Stack Trace:
+#0 C:\mokymai_vcs\cms\src\Controller\ArticlesController.php(28): Cake\ORM\Query->firstOrFail()
+#1 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\ArticlesController->view('4')
+#2 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#3 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ArticlesController))
+#4 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\mokymai_vcs\cms\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\mokymai_vcs\cms\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\mokymai_vcs\cms\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
